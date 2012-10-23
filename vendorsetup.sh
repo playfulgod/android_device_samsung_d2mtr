@@ -1,3 +1,3 @@
 add_lunch_combo cm_d2mtr-eng
-add_lunch_combo cm_d32mtr-userdebug
+add_lunch_combo cm_d2mtr-userdebug
 add_lunch_combo full_d2mtr-eng
