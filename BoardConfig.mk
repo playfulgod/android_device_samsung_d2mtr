@@ -30,8 +30,8 @@
 TARGET_OTA_ASSERT_DEVICE := d2mtr
 
 # Kernel
-TARGET_KERNEL_CONFIG    := cyanogen_d2mtr_defconfig
-
+#TARGET_KERNEL_CONFIG   := cyanogen_d2mtr_defconfig
+TARGET_PREBUILT_KERNEL := device/samsung/d2mtr/kernel
 
 #TWRP
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
