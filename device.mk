@@ -25,13 +25,4 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/d2-common/overlay-cdma
 # Inherit from d2-common
 $(call inherit-product, device/samsung/d2-common/d2-common.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/d2mtr/d2mtr-vendor.mk)
-
-# Kernel
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+$(call inherit-product-if-exists, vendor/samsung/d2vzw/d2vzw-vendor.mk)
